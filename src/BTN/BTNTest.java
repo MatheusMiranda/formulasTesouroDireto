@@ -16,17 +16,17 @@ public class BTNTest {
 	
 	@Test
 	public void testCalculoPrecoUnitarioAtualizado() {
-		double precoUnitarioAnterior = 10.0;
-		double taxaReferencial = 0.5;
-		assertEquals(5.0, btn.calculaPrecoUnitarioAtualizado(precoUnitarioAnterior,taxaReferencial),0.1);
+		double precoUnitarioAnterior = 10.101011;
+		double taxaReferencial = 0.512341;
+		assertEquals(5.175162, btn.calculaPrecoUnitarioAtualizado(precoUnitarioAnterior,taxaReferencial),0.000001);
 	}
 	
 	@Test
 	public void testCalculaJuros() {
 		
-		double precoUnitarioAtualizado = btn.calculaPrecoUnitarioAtualizado(10.0, 0.5);
-		double fatorDeJuros = 0.2;
+		double precoUnitarioAtualizado = 14.120315;
+		double fatorDeJuros = 0.243218;
 		
-		assertEquals(1.0, btn.calculaJuros(precoUnitarioAtualizado,fatorDeJuros),0.1);
+		assertEquals(3.434314, btn.calculaJuros(precoUnitarioAtualizado,fatorDeJuros),0.000001);
 	}
 }
