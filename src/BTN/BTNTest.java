@@ -33,7 +33,7 @@ public class BTNTest {
 	@Test
 	public void testCalculaFatorDeJuros() {
 		double i = 0.1231451;
-		int n = 5;
+		double n = 5.0;
 		
 		assertEquals(0.00051292, btn.calculaFatorDeJuros(i,n),0.00000001);
 	}

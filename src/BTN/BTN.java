@@ -11,4 +11,10 @@ public class BTN {
 			double fatorDeJuros) {
 		return precoUnitarioAtualizado * fatorDeJuros;
 	}
+	
+	public double calculaFatorDeJuros(double i, double n) {
+		double base = 1.0+(i/100.0);
+		double expoente = n/12.0;
+		return Math.pow(base,expoente)-1.0;
+	}
 }
