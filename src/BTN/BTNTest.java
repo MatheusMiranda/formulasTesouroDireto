@@ -15,7 +15,7 @@ public class BTNTest {
 	}
 	
 	@Test
-	public void testCalculoPrecoUnitarioAtualizado() {
+	public void testCalculaPrecoUnitarioAtualizado() {
 		double precoUnitarioAnterior = 10.101011;
 		double taxaReferencial = 0.512341;
 		assertEquals(5.175162, btn.calculaPrecoUnitarioAtualizado(precoUnitarioAnterior,taxaReferencial),0.000001);
@@ -28,5 +28,13 @@ public class BTNTest {
 		double fatorDeJuros = 0.243218;
 		
 		assertEquals(3.434314, btn.calculaJuros(precoUnitarioAtualizado,fatorDeJuros),0.000001);
+	}
+	
+	@Test
+	public void testCalculaFatorDeJuros() {
+		double i = 0.1231451;
+		int n = 5;
+		
+		assertEquals(0.00051292, btn.calculaFatorDeJuros(i,n),0.00000001);
 	}
 }
