@@ -27,6 +27,6 @@ public class BTNTest {
 		double precoUnitarioAtualizado = btn.calculaPrecoUnitarioAtualizado(10.0, 0.5);
 		double fatorDeJuros = 0.2;
 		
-		asserEquals(1.0, btn.calculaJuros(precoUnitarioAtualizado,fatorDeJuros),0.1);
+		assertEquals(1.0, btn.calculaJuros(precoUnitarioAtualizado,fatorDeJuros),0.1);
 	}
 }

@@ -7,4 +7,9 @@ public class BTN {
 		
 		return precoUnitarioAnterior * taxaReferencial;
 	}
+	
+	public double calculaJuros(double precoUnitarioAtualizado,
+			double fatorDeJuros) {
+		return 1.0;
+	}
 }
