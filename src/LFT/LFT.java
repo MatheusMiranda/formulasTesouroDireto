@@ -1,13 +1,21 @@
 package LFT;
 
+import java.util.*;
+
 public class LFT {
 	
 	public double calculaValorNominalAtualizado(double valorNominalDeDataBase,double fatorResultante){
 		return valorNominalDeDataBase * fatorResultante;
 	}
 
-	public double calculaFatorResultante(double taxaSELIC,double n) {
-		return 52.12312412;
+	public double calculaFatorResultante(Vector<Double> taxasPorDia) {
+		double fatorResultante = 1.0; 
+		
+		for(Double taxa : taxasPorDia){
+			fatorResultante *= (1.0 + taxa);
+		}
+
+		return fatorResultante;
 	}
 
 }

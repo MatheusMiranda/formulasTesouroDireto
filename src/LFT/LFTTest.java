@@ -1,5 +1,6 @@
 package LFT;
 
+import java.util.*;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,9 +23,15 @@ public class LFTTest {
 	
 	@Test
 	public void testCalculaFatorResultante() {
-		double taxaSELIC = 17.17263841;
-		double n = 5;
-		assertEquals(52.12312412,lft.calculaFatorResultante(taxaSELIC,n),0.00000001);
+		Vector<Double> taxasPorDia =  new Vector<Double>();
+		
+		taxasPorDia.addElement(1.12647582);
+		taxasPorDia.addElement(2.18265827);
+		taxasPorDia.addElement(3.16285628);
+		taxasPorDia.addElement(4.19283145);
+		taxasPorDia.addElement(5.92847124);
+
+		assertEquals(1013.63948818,lft.calculaFatorResultante(taxasPorDia),0.00000001);
 	}
 	
 }
