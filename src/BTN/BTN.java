@@ -42,4 +42,5 @@ public class BTN {
 			return dolar * 0.6457;
 		}
 	}
+
 }
