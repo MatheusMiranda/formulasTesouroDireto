@@ -17,7 +17,7 @@ public class LFTTest {
 	public void testCalculaValorNominalAtualizado() {
 		double valorNominalDeDataBase = 7.981425;
 		double C = 10.123215;
-		assertEquals(80.797681,lft.calculaValorNominal(valorNominalDeDataBase,C),0.000001);
+		assertEquals(80.797681,lft.calculaValorNominalAtualizado(valorNominalDeDataBase,C),0.000001);
 	}
 	
 }
