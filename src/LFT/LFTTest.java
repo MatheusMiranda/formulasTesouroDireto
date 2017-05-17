@@ -20,4 +20,11 @@ public class LFTTest {
 		assertEquals(80.797681,lft.calculaValorNominalAtualizado(valorNominalDeDataBase,fatorResultante),0.000001);
 	}
 	
+	@Test
+	public void testCalculaFatorResultante() {
+		double taxaSELIC = 17.17263841;
+		double n = 5;
+		assertEquals(52.12312412,lft.calculaFatorResultante(taxaSELIC,n),0.00000001);
+	}
+	
 }
