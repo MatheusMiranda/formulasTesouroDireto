@@ -37,4 +37,12 @@ public class BTNTest {
 		
 		assertEquals(0.00051292, btn.calculaFatorDeJuros(i,n),0.00000001);
 	}
+	
+	@Test
+	public void testCalculaPrincipalDolar() {
+		double precoUnitarioDolar = 10.123123;
+		int quantidade = 5;
+		
+		assertEquals(50.615615, btn.calculaPrincipal(precoUnitarioDolar, quantidade),0.000001)
+	}
 }
