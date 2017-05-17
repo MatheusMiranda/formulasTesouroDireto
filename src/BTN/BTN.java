@@ -1,8 +1,12 @@
 package BTN;
 
-import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class BTN {
+	
+	public static GregorianCalendar dia1 = new GregorianCalendar(89,15,12);
+	public static GregorianCalendar dia2 = new GregorianCalendar(90,18,9);
+	public static GregorianCalendar dia3 = new GregorianCalendar(90,15,11);
 	
 	public double calculaPrecoUnitarioAtualizado(double precoUnitarioAnterior,
 			double taxaReferencial) {
@@ -29,7 +33,8 @@ public class BTN {
 		}
 	}
 	
-	public double descobreDeflator(Date dia, double dolar) {
+	public double descobreDeflator(GregorianCalendar dia, double dolar) {
+		
 		return 7.815050956;
 	}
 }

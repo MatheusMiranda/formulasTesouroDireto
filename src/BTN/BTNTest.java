@@ -2,7 +2,7 @@ package BTN;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -61,22 +61,22 @@ public class BTNTest {
 	
 	@Test
 	public void testDescobreDeflatorDia1() {
-		Date dia1 = new Date(89,15,12);	
+		GregorianCalendar  dia1 = new GregorianCalendar(89,15,12);
 		double dolar = 10.123123;
 		assertEquals(7.815050956, btn.descobreDeflator(dia1, dolar),0.000001);
 	}
 	
 	@Test
 	public void testDescobreDeflatorDia2() {
-		Date dia2 = new Date(90,18,9);
+		GregorianCalendar dia2 = new GregorianCalendar(90,18,9);
 		double dolar = 10.123123;
 		assertEquals(7.815050956, btn.descobreDeflator(dia2, dolar),0.000001);
 	}
 	
 	@Test
 	public void testDescobreDeflatorDia3() {
-		Date dia3 = new Date(90,15,11);		
 		double dolar = 10.123123;
+		GregorianCalendar dia3 = new GregorianCalendar(90,15,11);		
 		assertEquals(7.815050956, btn.descobreDeflator(dia3, dolar),0.000001);
 	}
 }
