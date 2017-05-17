@@ -47,4 +47,14 @@ public class BTNTest {
 		assertEquals(151.846845, btn.calculaPrincipal(precoUnitarioDolar,
 				precoUnitarioAtualizado, quantidade),0.000001);
 	}
+	
+	@Test
+	public void testCalculaPrincipalAtualizado() {
+		double precoUnitarioDolar = 10.123123;
+		double precoUnitarioAtualizado = 12.123123;
+		int quantidade = 5;
+		
+		assertEquals(60.615615, btn.calculaPrincipal(precoUnitarioDolar,
+				precoUnitarioAtualizado, quantidade),0.000001);
+	}
 }
