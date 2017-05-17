@@ -61,22 +61,22 @@ public class BTNTest {
 	
 	@Test
 	public void testDescobreDeflatorDia1() {
-		GregorianCalendar  dia1 = new GregorianCalendar(89,15,12);
+		GregorianCalendar  dia1 = BTN.dia1;
 		double dolar = 10.123123;
-		assertEquals(7.815050956, btn.descobreDeflator(dia1, dolar),0.000001);
+		assertEquals(7.815050, btn.descobreDeflator(dia1, dolar),0.000001);
 	}
 	
 	@Test
 	public void testDescobreDeflatorDia2() {
-		GregorianCalendar dia2 = new GregorianCalendar(90,18,9);
+		GregorianCalendar dia2 = BTN.dia2;
 		double dolar = 10.123123;
-		assertEquals(7.815050956, btn.descobreDeflator(dia2, dolar),0.000001);
+		assertEquals(7.948676, btn.descobreDeflator(dia2, dolar),0.000001);
 	}
 	
 	@Test
 	public void testDescobreDeflatorDia3() {
 		double dolar = 10.123123;
-		GregorianCalendar dia3 = new GregorianCalendar(90,15,11);		
-		assertEquals(7.815050956, btn.descobreDeflator(dia3, dolar),0.000001);
+		GregorianCalendar dia3 = BTN.dia3;		
+		assertEquals(6.536500, btn.descobreDeflator(dia3, dolar),0.000001);
 	}
 }

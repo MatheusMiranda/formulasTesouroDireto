@@ -34,7 +34,12 @@ public class BTN {
 	}
 	
 	public double descobreDeflator(GregorianCalendar dia, double dolar) {
-		
-		return 7.815050956;
+		if(dia == dia1) {
+			return dolar * 0.772;
+		} else if(dia == dia2) {
+			return dolar * 0.7852;
+		} else {
+			return dolar * 0.6457;
+		}
 	}
 }
