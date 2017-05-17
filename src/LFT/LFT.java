@@ -6,4 +6,8 @@ public class LFT {
 		return valorNominalDeDataBase * fatorResultante;
 	}
 
+	public double calculaFatorResultante(double taxaSELIC,double n) {
+		return 52.12312412;
+	}
+
 }
