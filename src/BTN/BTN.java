@@ -20,6 +20,10 @@ public class BTN {
 	
 	public double calculaPrincipal(double precoUnitarioDolar,
 			double precoUnitarioAtualizado, double quantidade) {		
-		return 151.846845;
+		if(precoUnitarioDolar > precoUnitarioAtualizado) {
+			return precoUnitarioDolar * quantidade; 
+		} else {
+			return precoUnitarioAtualizado * quantidade;
+		}
 	}
 }
