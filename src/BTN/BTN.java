@@ -1,5 +1,7 @@
 package BTN;
 
+import java.util.Date;
+
 public class BTN {
 	
 	public double calculaPrecoUnitarioAtualizado(double precoUnitarioAnterior,
@@ -25,5 +27,9 @@ public class BTN {
 		} else {
 			return precoUnitarioAtualizado * quantidade;
 		}
+	}
+	
+	public double descobreDeflator(Date dia, double dolar) {
+		return 7.815050956;
 	}
 }

@@ -2,7 +2,7 @@ package BTN;
 
 import static org.junit.Assert.assertEquals;
 
-import java.sql.Date;
+import java.util.Date;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -61,22 +61,22 @@ public class BTNTest {
 	
 	@Test
 	public void testDescobreDeflatorDia1() {
-		Date dia1 = new Date(12,15,89);	
+		Date dia1 = new Date(89,15,12);	
 		double dolar = 10.123123;
-		assertEquals(7.815050956, btn.descobreDeflator(dia1, dolar));
+		assertEquals(7.815050956, btn.descobreDeflator(dia1, dolar),0.000001);
 	}
 	
 	@Test
 	public void testDescobreDeflatorDia2() {
-		Date dia2 = new Date(9,18,90);
+		Date dia2 = new Date(90,18,9);
 		double dolar = 10.123123;
-		assertEquals(7.815050956, btn.descobreDeflator(dia2, dolar));
+		assertEquals(7.815050956, btn.descobreDeflator(dia2, dolar),0.000001);
 	}
 	
 	@Test
 	public void testDescobreDeflatorDia3() {
-		Date dia3 = new Date(11,15,90);		
+		Date dia3 = new Date(90,15,11);		
 		double dolar = 10.123123;
-		assertEquals(7.815050956, btn.descobreDeflator(dia3, dolar));
+		assertEquals(7.815050956, btn.descobreDeflator(dia3, dolar),0.000001);
 	}
 }
