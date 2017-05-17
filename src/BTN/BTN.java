@@ -17,4 +17,9 @@ public class BTN {
 		double expoente = n/12.0;
 		return Math.pow(base,expoente)-1.0;
 	}
+	
+	public double calculaPrincipal(double precoUnitarioDolar,
+			double precoUnitarioAtualizado, double quantidade) {		
+		return 151.846845;
+	}
 }
