@@ -16,7 +16,15 @@ public class LFT_ATest {
 	
 	@Test
 	public void testCalculaFatorResultante() {
-		assertEquals(12.12312451,lftA.calculaFatorResultante,0.00000001);
+		Vector<Double> taxasPorDia =  new Vector<Double>();
+		
+		taxasPorDia.addElement(1.12647122);
+		taxasPorDia.addElement(7.18242327);
+		taxasPorDia.addElement(12.16285628);
+		taxasPorDia.addElement(4.19212125);
+		taxasPorDia.addElement(20.92847124);	
+		
+		assertEquals(26076.22811346,lftA.calculaFatorResultante(taxasPorDia),0.00000001);
 	}	
 	
 }
