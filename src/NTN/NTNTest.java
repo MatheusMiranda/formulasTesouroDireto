@@ -23,7 +23,7 @@ public class NTNTest {
 		double dolar2 = 20.321321;
 		double valorLiquido = 1.321321;
 		
-		assertEquals(0.377011, ntn.calculaPrecoUnitarioDeAmortizacao(dolar1, dolar2, valorLiquido),0.000001);
+		assertEquals(0.658219, ntn.calculaPrecoUnitarioDeAmortizacao(dolar1, dolar2, valorLiquido),0.000001);
 	}
 	
 }
