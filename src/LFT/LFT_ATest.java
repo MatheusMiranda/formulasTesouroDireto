@@ -33,4 +33,9 @@ public class LFT_ATest {
 		
 		assertEquals(8.337255953172473E-5,lftA.calculaTaxaSelicDiaria(taxaSELIC),0.00000001);
 	}
+	
+	@Test
+	public void testCalculaValorNominalAtualizado() {
+		assertEquals(12.12312421,lftA.calculaValorNominalAtualizado(),0.00000001);
+	}
 }

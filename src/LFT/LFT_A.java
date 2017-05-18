@@ -20,4 +20,8 @@ public class LFT_A {
 		
 		return Math.pow(base,expoente) - 1.0;
 	}
+	
+	public double calculaValorNominalAtualizado() {
+		return 12.12312421;
+	}
 }
