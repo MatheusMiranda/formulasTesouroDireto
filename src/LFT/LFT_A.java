@@ -15,6 +15,9 @@ public class LFT_A {
 	}
 	
 	public double calculaTaxaSelicDiaria(double taxaSELIC){
-		return 12.12421523;
+		double base = ((taxaSELIC/100.0) + 1.0);
+		double expoente = 1.0/252.0;
+		
+		return Math.pow(base,expoente) - 1.0;
 	}
 }

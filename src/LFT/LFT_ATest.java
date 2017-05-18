@@ -31,6 +31,6 @@ public class LFT_ATest {
 	public void testCalculaTaxaSelicDiaria() {
 		double taxaSELIC = 2.12312521;
 		
-		assertEquals(12.12421523,lftA.calculaTaxaSelicDiaria(taxaSELIC),0.00000001);
+		assertEquals(8.337255953172473E-5,lftA.calculaTaxaSelicDiaria(taxaSELIC),0.00000001);
 	}
 }
