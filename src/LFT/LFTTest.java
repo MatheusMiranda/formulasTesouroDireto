@@ -34,4 +34,10 @@ public class LFTTest {
 		assertEquals(1013.63948818,lft.calculaFatorResultante(taxasPorDia),0.00000001);
 	}
 	
+	@Test
+	public void testCalculaTaxaSelicDiaria() {
+		double taxaSELIC;
+		assertEquals(14.12345125,lft.calculaTaxaSelicDiaria(double taxaSELIC),0.00000001)
+	}
+	
 }
