@@ -27,6 +27,6 @@ public class NTNTest {
 		double precoUnitarioAmortizado = 0.658219;
 		double somatoriaDeJuros = 10.123123;
 		
-		assertEquals(6.663231, ntn.calculaJuros(precoUnitarioAmortizado, somatoriaDeJuros).000001);
+		assertEquals(6.663231, ntn.calculaJuros(precoUnitarioAmortizado, somatoriaDeJuros),0.000001);
 	}	
 }
