@@ -29,6 +29,8 @@ public class LFT_ATest {
 	
 	@Test
 	public void testCalculaTaxaSelicDiaria() {
-		assertEquals(12.12421523,lftA.calculaTaxaSelicDiaria,0.00000001);
+		double taxaSELIC = 2.12312521;
+		
+		assertEquals(12.12421523,lftA.calculaTaxaSelicDiaria(taxaSELIC),0.00000001);
 	}
 }
