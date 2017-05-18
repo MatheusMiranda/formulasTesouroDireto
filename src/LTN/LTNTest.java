@@ -1,5 +1,7 @@
 package LTN;
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.*;
 
 import org.junit.Before;
