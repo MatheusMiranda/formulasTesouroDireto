@@ -25,6 +25,10 @@ public class LFT_ATest {
 		taxasPorDia.addElement(20.92847124);	
 		
 		assertEquals(26076.22811346,lftA.calculaFatorResultante(taxasPorDia),0.00000001);
-	}	
+	}
 	
+	@Test
+	public void testCalculaTaxaSelicDiaria() {
+		assertEquals(12.12421523,lftA.calculaTaxaSelicDiaria,0.00000001);
+	}
 }
