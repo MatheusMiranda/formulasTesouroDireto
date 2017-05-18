@@ -36,6 +36,7 @@ public class LFT_ATest {
 	
 	@Test
 	public void testCalculaValorNominalAtualizado() {
-		assertEquals(12.12312421,lftA.calculaValorNominalAtualizado(),0.00000001);
+		assertEquals(91680.73901844,lftA.calculaValorNominalAtualizado(15.12847214,1024.12455614,12,20,
+				12,5),0.00000001);
 	}
 }

@@ -21,7 +21,15 @@ public class LFT_A {
 		return Math.pow(base,expoente) - 1.0;
 	}
 	
-	public double calculaValorNominalAtualizado() {
-		return 12.12312421;
+	public double calculaValorNominalAtualizado(double valorNominalDeEmissao, double fatorResultante,double numeroDeDiasUteisAteAtualizacao,
+			double numeroDeDiasUteisAtePagamento, double numeroDeParcelas,double numeroDeParcelasAmortizadas) {
+		
+		double tac = 0.000245;
+		
+		double fator1 = fatorResultante * valorNominalDeEmissao * Math.pow(( 1.0 + tac/100.0),(numeroDeDiasUteisAteAtualizacao/numeroDeDiasUteisAtePagamento)); 
+		double fator2 = fatorResultante * valorNominalDeEmissao * Math.pow( (1.0 + tac),(numeroDeDiasUteisAteAtualizacao/numeroDeDiasUteisAtePagamento));
+		double fator3 = (1.0 / numeroDeParcelas - numeroDeParcelasAmortizadas);
+		
+		return fator1 - fator2 * fator3;
 	}
 }
