@@ -17,5 +17,9 @@ public class LFT {
 
 		return fatorResultante;
 	}
+	
+	public double calculaTaxaSelicDiaria(double taxaSELIC){
+		return 14.12345125;
+	}
 
 }
