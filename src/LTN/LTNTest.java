@@ -18,7 +18,8 @@ public class LTNTest {
 	
 	@Test
 	public void testCalculaPrecoUnitario(){
-		assertEquals(15.16389281,ltn.calculaPrecoUnitario(),0.00000001);
+		double taxaIndicativa = 14.12746573;
+		assertEquals(989.27808435,ltn.calculaPrecoUnitario(taxaIndicativa),0.00000001);
 	}
 	
 }

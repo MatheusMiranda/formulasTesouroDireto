@@ -2,7 +2,7 @@ package LFT;
 
 import java.util.*;
 
-public class LFT {
+public class LFT_B {
 	
 	public double calculaValorNominalAtualizado(double valorNominalDeDataBase,double fatorResultante){
 		return valorNominalDeDataBase * fatorResultante;

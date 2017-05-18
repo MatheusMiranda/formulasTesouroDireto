@@ -7,18 +7,18 @@ import org.junit.Test;
 
 public class LFTTest {
 	
-	LFT lft;
+	LFT_B lftb;
 	
 	@Before
 	public void setUp() throws Exception {
-		lft = new LFT();
+		lftb = new LFT_B();
 	}
 	
 	@Test
 	public void testCalculaValorNominalAtualizado() {
 		double valorNominalDeDataBase = 7.981425;
 		double fatorResultante = 10.123215;
-		assertEquals(80.797681,lft.calculaValorNominalAtualizado(valorNominalDeDataBase,fatorResultante),0.000001);
+		assertEquals(80.797681,lftb.calculaValorNominalAtualizado(valorNominalDeDataBase,fatorResultante),0.000001);
 	}
 	
 	@Test
@@ -31,14 +31,14 @@ public class LFTTest {
 		taxasPorDia.addElement(4.19283145);
 		taxasPorDia.addElement(5.92847124);
 
-		assertEquals(1013.63948818,lft.calculaFatorResultante(taxasPorDia),0.00000001);
+		assertEquals(1013.63948818,lftb.calculaFatorResultante(taxasPorDia),0.00000001);
 	}
 	
 	@Test
 	public void testCalculaTaxaSelicDiaria() {
 		double taxaSELIC = 2.14234566;
 		
-		assertEquals(8.411941130592737E-5,lft.calculaTaxaSelicDiaria(taxaSELIC),0.00000001);
+		assertEquals(8.411941130592737E-5,lftb.calculaTaxaSelicDiaria(taxaSELIC),0.00000001);
 	}
 	
 }
