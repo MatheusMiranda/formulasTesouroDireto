@@ -14,7 +14,7 @@ public class NTN {
 		return (dolar1/dolar2)*valorDeEmissao;
 	}
 	
-	public double calculaValorUnitarioJuros(double fator, double valorNominalAtualizado) {
-		return 6.663231;
+	public double calculaValorUnitarioJuros(double fator, double valorNominalAtualizado) {		
+		return fator * valorNominalAtualizado;
 	}
 }
