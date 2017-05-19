@@ -24,4 +24,12 @@ public class NTN_BTest {
 		assertEquals(271.334257, ntn_b.calculaValorNominalAtualizado(fator, IPCA1, IPCA2, valorNominal), 0.000001);
 	}
 	
+	@Test
+	public void testCalculaJuros() {
+		double valorNominalAtualizado = 10.123123;
+		double fator = 20.123123;
+		
+		assertEquals(193.585726, ntn_b.calculaJuros(valorNominalAtualizado, fator), 0.000001);
+	}
+	
 }
