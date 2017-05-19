@@ -1,5 +1,6 @@
 package NTN;
 
-public class NTN_B {
+import org.junit.Before;
 
+public class NTN_B {
 }
