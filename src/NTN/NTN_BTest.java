@@ -15,7 +15,7 @@ public class NTN_BTest {
 	}
 	
 	@Test
-	public testCalculaValorNominalAtualizado() {
+	public void testCalculaValorNominalAtualizado() {
 		double fator = 10.123123;
 		double IPCA1 = 20.123123;
 		double IPCA2 = 30.123123;
