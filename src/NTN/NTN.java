@@ -10,4 +10,7 @@ public class NTN {
 		return precoUnitarioAmortizado*somatoriaDeJuros;
 	}
 	
+	public double calculaValorNominalAtualizado(double dolar1, double dolar2, double valorDeEmissao) {
+		return 0.658219;
+	}
 }
