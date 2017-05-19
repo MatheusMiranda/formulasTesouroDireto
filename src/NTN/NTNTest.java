@@ -37,4 +37,12 @@ public class NTNTest {
 		double valorDeEmissao = 1.321321;
 		assertEquals(0.658219, ntn.calculaValorNominalAtualizado(dolar1, dolar2, valorDeEmissao), 0.000001);
 	}
+	
+	@Test
+	public void testeCalculaValorUnitarioJuros() {
+		double fator = 10.123123;
+		double valorNominalAtualizado = 0.658219;
+		
+		assertEquals(6.663231, ntn.calculaValorUnitarioJuros(fator, valorNominalAtualizado), 0.000001);
+	}
 }
