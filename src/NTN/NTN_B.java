@@ -8,6 +8,6 @@ public class NTN_B {
 	}
 	
 	public double calculaJuros(double valorNominalAtualizado, double fator) {
-		return 193.585726;
+		return valorNominalAtualizado*(fator-1);
 	}
 }
